@@ -99,12 +99,22 @@ conda install -c conda-forge montreal-forced-aligner=2.2.17 openfst=1.8.2 kaldi=
 
 # to run ipynb
 conda install -n voicecraft ipykernel --no-deps --force-reinstall
+
+# to run gradio app
+pip install gradio
 ```
 
 If you have encountered version issues when running things, checkout [environment.yml](./environment.yml) for exact matching.
 
 ## Inference Examples
 Checkout [`inference_speech_editing.ipynb`](./inference_speech_editing.ipynb) and [`inference_tts.ipynb`](./inference_tts.ipynb)
+
+To use a UI you can use the gradio app, this required the environment to be setup
+
+```
+conda activate voicecraft
+python3 tts_app.py
+```
 
 ## Training
 To train an VoiceCraft model, you need to prepare the following parts:

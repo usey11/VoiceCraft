@@ -27,3 +27,6 @@ src/audiocraft
 
 !/demo/
 !/demo/*
+/demo
+
+.vscode
